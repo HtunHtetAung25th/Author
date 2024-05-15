@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+:root {
+  font-family: "JetBrains Mono", monospace, Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: #0f0f0f;
+  background-color: #f6f6f6;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+  color: white;
+  text-decoration: none;
+}
+
+a,
+Link {
+  text-decoration: none;
+}
+
+.Container {
+  display: flex;
+}
+
+.SideBar {
+  background-color: #3A4C56;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 250px;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.5 ease-in-out;
+
+
+}
+
+.SideBar .top {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.SideBar .top h1 {
+  color: #D43532;
+  letter-spacing: 0.5rem;
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+}
+
+.SideBar .top sub {
+  color: white;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.SideBar .top sub:hover {
+  color: #ffffff;
+  font-weight: 900;
+  transition: all 0.5s ease-in-out;
+}
+
+.SideBar .bottom {
+  margin-bottom: 1.5rem;
+}
+
+.SideBar .bottom .image_settings {
+  background-color: #628A98;
+  border-radius: 50%;
+  width: 4rem;
+  transition: all 0.5s ease-in-out;
+
+}
+
+.SideBar .bottom .image_settings:hover {
+  transform: rotate(40deg);
+  transition: all 0.5s ease-in-out;
+}
+
+.SideBar .middle {
+  margin-top: 2rem;
+}
+
+.SideBar .middle ul {
+  padding: 0;
+  margin-bottom: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.SideBar .middle ul li {
+  color: white;
+  transition: all 0.2s ease-in-out;
+
+}
+
+.SideBar .middle ul li:hover {
+  color: black;
+  font-weight: 900;
+  background-color: #D9D9D9;
+  padding: 1rem;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.search_file {
+  border: none;
+  height: 50px;
+  border-radius: 20px;
+  font-size: 2rem;
+  padding: 0 1rem 0 1rem;
+  color: #0f0f0f;
+}
+
+.search_file:focus {
+  outline-color: #D43532;
+}
+
+.icon_search {
+  width: 50px;
+  transition: all 0.3s ease-in-out;
+
+}
+.icon_search:hover {
+  transform: rotate(20deg);
+  transition: all 0.3s ease-in-out;
+}
+
+.HomeProjects .search .left {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #D43532;
+  border-radius: 21px;
+  padding-right: 1rem;
+  border: none;
+}
+
+.HomeProjects .search .right {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.HomeProjects .search .right button{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 20px;
+  padding: 0 1rem 0 1rem;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+
+}
+.HomeProjects .search .right button:hover{
+  background-color: #D43532;
+  color: white;
+  font-weight: 400;
+  transition: all 0.3s ease-in-out;
+}
+.HomeProjects .search {
+  display: flex;
+  gap: 1rem;
+}
+.file_new_open {
+  width: 45px;
+  transition: all 0.3s ease-in-out;
+
+}
+.file_new_open:hover {
+  transform: rotate(20deg);
+  transition: all 0.3s ease-in-out;
+
+}
+.RecentDocuments h3 {
+  margin: 3rem 0 1.5rem 0;
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+}
+.HomeProjects {
+  padding: 1rem;
+  width: 100%;
+}
+.DocumentsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  gap: 1rem;
+}
+.DocumentsGrid .card {
+  background-color: #D9D9D9;
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.DocumentsGrid .card_banner {
+  background-color: #628A98;
+  color: white;
+  padding: 2rem 3rem 2rem 3rem;
+  border-radius: 20px;
+  font-size: 2rem;
+}
+
+@media (max-width: 600px) or (max-height: 800px) {
+  .SideBar {
+    display: none;
+    transition: all 0.5 ease-in-out;
+  }
+}
