@@ -1,0 +1,32 @@
+[zau]
+version = "1"
+
+[application]
+name = "Author" 
+version = "1.0.0"
+
+[file]
+author = "Zarni Hlawn"
+collaborator = ("Htun Aung Htet", "Min Thant Paing")
+date = ("16.4.2024", "27.6.2024")
+time = ("3:10:00", "23:35:09")
+
+[config]
+[[font]]
+heading_one = ("Arial", 24, "normal", "extrabold", "center")
+heading_two = ("Arial", 20, "italic", "bold", "left")
+heading_three = ("Monospace", 16, "normal", "normal", "right")
+heading_four = ("Monospace", 15, "normal", "light", "left")
+heading_five = ("Jetbrains Mono", 14, "super", "extralight", "left")
+heading_six = ("Monospace", 13, "sub", "extralight", "left")
+paragraph = ("Monospace", 12, "normal", "normal", "left")
+title = ("Verdana", 28, "normal", "extrabold", "center")
+sub_title = ("Verdana", 14, "italic", "extrabold", "center")
+[[margin]]
+margin = (12, 20, 12, 20)
+[[padding]]
+padding = (12, 20, 12, 20)
+[[head]]
+
+
+

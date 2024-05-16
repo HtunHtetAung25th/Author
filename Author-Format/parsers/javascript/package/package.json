@@ -1,0 +1,14 @@
+{
+  "name": "zau_parser",
+  "version": "1.0.0",
+  "description": "reading and writing parser for .zau file format",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "zarnihlawn"
+  ],
+  "author": "Zarni Hlawn",
+  "license": "ISC"
+}
